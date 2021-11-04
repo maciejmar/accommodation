@@ -4,7 +4,7 @@ class Hotels extends Component {
   {
       return (
     <div>
-        hotels
+        Hotels
     </div>
   )
   }
