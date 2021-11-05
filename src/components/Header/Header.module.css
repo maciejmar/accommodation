@@ -9,3 +9,15 @@
 body {
     background-color: #745071
   }
+
+button {
+    width: calc(100% -20px);
+    background-color: rgb(223, 215, 182);
+    color:rgb(235, 93, 12);
+    border-radius:5%;
+    border-color:darkkhaki;
+    margin-left: 10px;
+    font-family: fantasy;
+    font-weight: bold;
+    
+}
