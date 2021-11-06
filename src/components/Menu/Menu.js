@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Menu.module.css';
+import style from './Menu.module.scss';
 function Menu() {
     return (
         <div className={` ${style.menuContainer} container`}>

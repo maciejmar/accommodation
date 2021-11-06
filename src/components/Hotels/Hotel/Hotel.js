@@ -4,7 +4,7 @@ import styles from './Hotel.module.css';
 
 function Hotel () {
     return (
-        <div className="card">
+        <div className={`card ${styles.hotel}`}>
             <div className="card-body">
         
                     <div className={`row ${styles.hotel}`}>
@@ -17,21 +17,21 @@ function Hotel () {
                         <div className='col-8'>
                             <div className='row'>
                                 <div className="col">
-                                    <p>Title</p>
-                                    <p>city</p>  
+                                    <p className={styles.title}>Rooms to let</p>
+                                    <span className="badge badge-light">city</span>  
                                 </div>
-                                <div className="col">
-                                    <p>Scoring</p>
-                                    <p>Opinons</p>
+                                <div className="col text-right">
+                                    <p className={styles.scores}>Scoring: 0</p>
+                                    
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-12">
-                            <p>description is here - lore ipsum of beach and swimming under the palms. All inclusive and so on, and so on</p>
-                            <a href="#" className="btn btn-primary"> Show </a>
+                            <p className={styles.description}>description is here - lore ipsum of beach and swimming under the palms. All inclusive and so on, and so on</p>
+                            <a href="#" className="btn btn-primary mt-2 px-5"> Show </a>
                         </div>
-                        
+
                     </div>
             </div>
         </div>

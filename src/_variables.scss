@@ -1,0 +1,6 @@
+$background-base: rgb(244, 200 ,230);
+$background-alpha:  rgba($background-base, 0.70);
+:export {
+  backgroundBase: $background-base;
+  backgroundAlpha: $background-alpha;
+}

@@ -6,7 +6,7 @@ function SearchBar () {
        
             <input className='form-control'
             type="text" placeholder="Searching..." />
-            <button className="btn btn-primary"> GO! </button> 
+            <button className="ml-1 btn btn-secondary"> GO! </button> 
         
 
     </div>
