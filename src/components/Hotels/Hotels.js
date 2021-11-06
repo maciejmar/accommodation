@@ -1,10 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Hotel from './Hotel/Hotel';
+import styles from './Hotels.module.css';
 class Hotels extends Component {
   render ()
   {
       return (
-    <div>
-        Hotels
+    <div className={styles.container}>
+        <h2 className= {styles.title}>Oferts:</h2>
+            <Hotel/>
+            <Hotel/>
+            
+            
+        
     </div>
   )
   }

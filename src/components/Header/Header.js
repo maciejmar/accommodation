@@ -5,9 +5,9 @@ import styles from "./Header.module.css";
 
 function Header() {
  return (
-     <div className={styles.header}>
+     <header className={ `${styles.header} +  container`}>
          <SearchBar/>
-    </div>
+    </header>
  )
 }
 

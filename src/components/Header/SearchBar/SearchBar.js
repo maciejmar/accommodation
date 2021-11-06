@@ -1,17 +1,14 @@
 import React from 'react';
+
 function SearchBar () {
     return(
-   <div>
-     <input style={
-       {
-        color: 'blue',
-        fontFamily: 'fantasy'
+   <div className='d-flex'>
+       
+            <input className='form-control'
+            type="text" placeholder="Searching..." />
+            <button className="btn btn-primary"> GO! </button> 
         
-       }  
-    
-     }
-     type="text" placeholder="Search for destination..." />
-     <button>GO!</button>
+
     </div>
  
    )

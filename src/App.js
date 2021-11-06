@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Menu/>
       <Hotels/>
-      <Hotel/>
+      
     </div>
   );
 }
