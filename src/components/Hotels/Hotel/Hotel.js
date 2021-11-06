@@ -1,7 +1,15 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+
 import img from '../../../assets/img/hotel.jpg'
 import styles from './Hotel.module.css';
 
+const propTypes = {
+    name: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    rating: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+}
 function Hotel (props) {
     return (
         <div className={`card ${styles.hotel}`}>
@@ -38,4 +46,11 @@ function Hotel (props) {
         
     )
 }
+Hotel.propTypes = {
+    name: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    rating: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+}
+Hotel.propTypes = propTypes;
 export default Hotel;
