@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 40px 15px;
+    background: url(../../src/assets/img/hotel.jpg);
 }
 
 body {
