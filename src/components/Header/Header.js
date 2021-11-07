@@ -6,7 +6,7 @@ import styles from "./Header.module.css";
 function Header() {
  return (
      <header className={ `${styles.header} +  container`}>
-         <SearchBar/>
+         <SearchBar onSearch = {props.onSearch}/>
     </header>
  )
 }

@@ -9,6 +9,7 @@ function SearchBar (props) {
     const search= () => {
         
         console.log('szukaj!', term);
+        props.onSearch(term);
     }
 
     const updateTerm = (e) => {

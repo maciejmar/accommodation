@@ -35,7 +35,7 @@ constructor(props) {
  render() {
   return (
     <div className="App">
-      <Header />
+      <Header onSearch= {term => this.searchHandler(term)}/>
       <Menu/>
       <Hotels hotels={this.state.hotels}/>
       
