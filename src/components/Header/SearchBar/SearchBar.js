@@ -4,7 +4,7 @@ const propTypes = {
     search: PropTypes.func.isRequired
 }
 function SearchBar (props) {
-    
+ 
     const [term, setTerm] = useState('');
     const search= () => {
         
@@ -16,7 +16,8 @@ function SearchBar (props) {
         setTerm(e.target.value);
     }
     const onKeyDwonHandler =  (e) => {
-        if(e.key === 'enter') search(); 
+        if(e.key === 'enter') props.onSearch();    
+          
     }
 
     return(

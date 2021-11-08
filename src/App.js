@@ -7,11 +7,7 @@ import React, {Component} from 'react';
 
 
 class App extends Component {
-constructor(props) {
-  super(props)
-  this.state = {
-    
-      hotels:[
+      hotels = [
         {
           id:1,
           name: 'Under palm trees',
@@ -19,7 +15,7 @@ constructor(props) {
           rating: '1.2',
           description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
           image: ''
-              },
+          },
           {
             id:2,
             name: 'On the Seeshore',
@@ -28,9 +24,18 @@ constructor(props) {
             description: 'Lorem Ipsum has been the industry-s standard dummy text ever since the 1500s.',
             image: ''
           }
-      ]
+      ];
+    state = { 
+      hotels: this.hotels
+    }
     
-   }
+
+
+  searchHandler(term) {
+      console.log('szukaj z app    ', term);
+      const hotels = [...this.state.hotels].filter(x => x.name.toLowerCase()
+      .includes(term.toLowerCase()));
+      this.setState({ hotels });
   }
  render() {
   return (
