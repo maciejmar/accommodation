@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 const propTypes = {
     search: PropTypes.func.isRequired
@@ -12,21 +12,23 @@ function SearchBar (props) {
         props.onSearch(term);
     }
 
-    const updateTerm = (e) => {
-        setTerm(e.target.value);
-    }
+    // const updateTerm = (e) => {
+    //     setTerm(e.target.value);
+    // }
     const onKeyDwonHandler =  (e) => {
-        if(e.key === 'enter') props.onSearch();    
+        if(e.key === 'Enter') search();    
           
     }
 
     return(
    <div className='d-flex'>
        
-            <input className='form-control' value={term} 
-            onChange={updateTerm} onKeyDown={onKeyDwonHandler}
-            type="text" placeholder="Searching..." />
-            <button onClick = {search} className="ml-1 btn btn-secondary"> GO! </button> 
+            <input value={term} 
+               onKeyDown = {onKeyDwonHandler}
+               onChange = { e => setTerm(e.target.value)} className="form-control"
+                 type="text" placeholder="Searching..." />
+            <button onClick = {search} 
+              className="ml-1 btn btn-secondary"> GO! </button> 
         
 
     </div>
