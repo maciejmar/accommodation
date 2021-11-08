@@ -15,7 +15,7 @@ function SearchBar (props) {
     // const updateTerm = (e) => {
     //     setTerm(e.target.value);
     // }
-    const onKeyDwonHandler =  (e) => {
+    const onKeyDownHandler =  e => {
         if(e.key === 'Enter') search();    
           
     }
@@ -24,7 +24,7 @@ function SearchBar (props) {
    <div className='d-flex'>
        
             <input value={term} 
-               onKeyDown = {onKeyDwonHandler}
+               onKeyDown = {onKeyDownHandler}
                onChange = { e => setTerm(e.target.value)} className="form-control"
                  type="text" placeholder="Searching..." />
             <button onClick = {search} 
