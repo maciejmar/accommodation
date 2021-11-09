@@ -37,7 +37,7 @@ function Hotel (props) {
 
                         <div className="col-12">
                             <p className={styles.description}>{props.description}</p>
-                            <a href="#" className="btn btn-primary mt-2 px-5"> Show </a>
+                            <a href="#" className={`btn btn-${props.theme} mt-2 px-5`}> Show </a>
                         </div>
 
                     </div>

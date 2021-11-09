@@ -28,12 +28,12 @@ function SearchBar (props) {
                onChange = { e => setTerm(e.target.value)} className="form-control"
                  type="text" placeholder="Searching..." />
             <button onClick = {search} 
-              className="ml-1 btn btn-secondary"> GO! </button> 
+              className={'ml-1 btn btn-${props.theme}'}> GO! </button> 
         
 
     </div>
  
-   )
+   );
 }
 SearchBar.propTypes = propTypes;
 export default SearchBar;

@@ -3,8 +3,8 @@ function Layout(props) {
  return(
     <div>
         <div>{props.header}</div>
-        <div>{props.menu}</div>
-        <div>{props.content}</div>
+        <div className="container">{props.menu}</div>
+        <div className = "container">{props.content}</div>
         <div>{props.footer}</div>
     </div>
 
